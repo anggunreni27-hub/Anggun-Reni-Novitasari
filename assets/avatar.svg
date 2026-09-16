@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0fe" />
+      <stop offset="50%" stop-color="#e9d5ff" />
+      <stop offset="100%" stop-color="#c4b5fd" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="hijabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7c3aed" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle with Soft Gradient -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
+
+  <!-- Decorative Background Ring -->
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6" stroke-dasharray="6 8" />
+
+  <!-- Decorative Modern Accents -->
+  <circle cx="65" cy="110" r="14" fill="#f472b6" opacity="0.4" />
+  <circle cx="330" cy="90" r="22" fill="#c084fc" opacity="0.4" />
+  <circle cx="340" cy="280" r="10" fill="#f472b6" opacity="0.5" />
+  <circle cx="70" cy="290" r="18" fill="#a855f7" opacity="0.3" />
+
+  <!-- Music & Tech Icon Accents in Background -->
+  <g transform="translate(60, 160) scale(0.7)" opacity="0.4">
+    <!-- Music note -->
+    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="#7c3aed" />
+  </g>
+  <g transform="translate(305, 170) scale(0.7)" opacity="0.4">
+    <!-- Code bracket -->
+    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" fill="#db2777" />
+  </g>
+
+  <!-- Avatar Silhouette / Student Illustration -->
+  <g filter="url(#softShadow)">
+    <!-- Clothing / Shoulder -->
+    <path d="M90 380 C100 290, 150 270, 200 270 C250 270, 300 290, 310 380 Z" fill="url(#clothGrad)" />
+
+    <!-- Collar / Inner Top -->
+    <path d="M165 270 C165 295, 235 295, 235 270 Z" fill="#ffffff" />
+    <path d="M178 270 L200 300 L222 270 Z" fill="#fce7f3" />
+
+    <!-- Hijab / Head Covering Flow -->
+    <path d="M115 220 C110 320, 140 330, 200 330 C260 330, 290 320, 285 220 C285 130, 260 90, 200 90 C140 90, 115 130, 115 220 Z" fill="url(#hijabGrad)" />
+
+    <!-- Face Oval -->
+    <ellipse cx="200" cy="195" rx="55" ry="65" fill="#fed7aa" />
+
+    <!-- Cheeks Blush -->
+    <ellipse cx="170" cy="208" rx="10" ry="6" fill="#f472b6" opacity="0.45" />
+    <ellipse cx="230" cy="208" rx="10" ry="6" fill="#f472b6" opacity="0.45" />
+
+    <!-- Eyes (Gentle, Smiling) -->
+    <path d="M160 188 C165 182, 175 182, 180 188" stroke="#334155" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M220 188 C225 182, 235 182, 240 188" stroke="#334155" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Gentle Eyebrows -->
+    <path d="M158 178 C165 174, 175 174, 182 177" stroke="#475569" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M218 177 C225 174, 235 174, 242 178" stroke="#475569" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Small Nose -->
+    <path d="M198 198 Q200 203 203 203" stroke="#f97316" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" />
+
+    <!-- Sweet Smile -->
+    <path d="M188 222 Q200 234 212 222" stroke="#db2777" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Hijab Face Frame & Front Fold Detail -->
+    <path d="M145 185 C145 130, 170 120, 200 120 C230 120, 255 130, 255 185 C255 240, 230 265, 200 265 C170 265, 145 240, 145 185 Z" fill="none" stroke="#a855f7" stroke-width="4" stroke-opacity="0.3" />
+    <path d="M200 265 Q200 295 198 330" stroke="#a855f7" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+  </g>
+
+  <!-- Badge "Pelajar RPL" overlay pin on bottom-right -->
+  <g transform="translate(245, 305)">
+    <rect x="0" y="0" width="120" height="38" rx="19" fill="#ffffff" filter="url(#softShadow)" />
+    <rect x="2" y="2" width="116" height="34" rx="17" fill="url(#primaryGrad)" />
+    <text x="60" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">SMK RPL</text>
+  </g>
+</svg>
