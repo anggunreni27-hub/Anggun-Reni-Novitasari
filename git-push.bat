@@ -72,11 +72,12 @@ git commit -m "%COMMIT_MSG%"
 
 :: 7. Pastikan branch main & Git Push
 echo.
-echo [4/4] Memastikan branch 'main' dan mengirim ke GitHub...
+echo [4/4] Menyelaraskan dengan remote dan mengirim ke GitHub...
 git branch -M main
+git pull origin main --rebase
 git push -u origin main
 
-if errorlevel 0 (
+if %errorlevel% equ 0 (
     echo.
     echo ======================================================
     echo   BERHASIL DIPUSH KE ORIGIN MAIN!

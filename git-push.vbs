@@ -113,7 +113,7 @@ finalCmd = "cmd.exe /k ""color 0B && " & _
            "echo [1/4] Menambahkan semua perubahan (git add .)... && git add . && echo. && " & _
            "echo [2/4] Melakukan commit: """ & commitMsg & """... && git commit -m """ & commitMsg & """ && echo. && " & _
            "echo [3/4] Memastikan branch utama adalah 'main'... && git branch -M main && echo. && " & _
-           "echo [4/4] Mengirim ke GitHub (git push -u origin main)... && git push -u origin main && echo. && " & _
+           "echo [4/4] Menyelaraskan & Mengirim ke GitHub (git pull rebase & push)... && git pull origin main --rebase && git push -u origin main && echo. && " & _
            "echo ====================================================== && " & _
            "echo   PROSES SELESAI! Jendela ini dapat ditutup.          && " & _
            "echo ======================================================"""
