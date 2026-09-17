@@ -1,58 +1,69 @@
 /* ==========================================================================
-   PORTFOLIO ANGGUN RENI NOVITASARI - MODERN & ELEGANT CSS STYLESHEET
-   Design System: Lilac Purple, Soft Pink, Pure White, Deep Violet Accents
-   Typography: Plus Jakarta Sans & Outfit
+   PORTFOLIO ANGGUN RENI NOVITASARI - AESTHETIC PINK COQUETTE STYLESHEET
+   Design System: Pastel Blush Pink, Baby Pink, Rose, Pearl White & Velvet Cherry
+   Typography: Playfair Display & Plus Jakarta Sans
+   Aesthetic: Romantic, Soft, Coquette Ribbons, Pearls & Dreamy Glow
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-/* --- CSS Variables / Design Tokens --- */
+/* --- CSS Variables / Pink Coquette Design Tokens --- */
 :root {
-  --primary-50: #fbf7ff;
-  --primary-100: #f3e8ff;
-  --primary-200: #e9d5ff;
-  --primary-300: #d8b4fe;
-  --primary-400: #c084fc;
-  --primary-500: #a855f7;
-  --primary-600: #9333ea;
-  --primary-700: #7c3aed;
-  --primary-800: #6b21a8;
+  /* Coquette Pink Spectrum */
+  --primary-50: #fff5f8;
+  --primary-100: #ffe4ec;
+  --primary-200: #ffd0de;
+  --primary-300: #fca8c4;
+  --primary-400: #f679a4;
+  --primary-500: #ee4b86;
+  --primary-600: #d6286c;
+  --primary-700: #b81458;
+  --primary-800: #880e3e;
+  --primary-900: #540827;
 
-  --pink-50: #fff1f5;
-  --pink-100: #fce7f3;
-  --pink-200: #fbcfe8;
-  --pink-300: #f472b6;
-  --pink-400: #ec4899;
-  --pink-500: #db2777;
+  --pink-50: #fff0f5;
+  --pink-100: #fce7ef;
+  --pink-200: #fbcfe0;
+  --pink-300: #f89ec0;
+  --pink-400: #f472a1;
+  --pink-500: #e83e8c;
 
-  --accent-gradient: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-  --accent-gradient-soft: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
-  --accent-gradient-subtle: linear-gradient(180deg, #faf8ff 0%, #ffffff 100%);
-  --card-gradient: linear-gradient(145deg, #ffffff 0%, #faf8ff 100%);
+  --coquette-cream: #fffdfb;
+  --coquette-pearl: #ffffff;
+  --coquette-ribbon: #ff7597;
+  --coquette-lace: rgba(255, 255, 255, 0.75);
 
-  --dark-900: #120e24;
-  --dark-800: #1e1b4b;
-  --dark-700: #2e1065;
-  --text-main: #1f2937;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
+  --accent-gradient: linear-gradient(135deg, #f472a1 0%, #ee4b86 50%, #b81458 100%);
+  --accent-gradient-soft: linear-gradient(135deg, #ffe4ec 0%, #ffd0de 100%);
+  --accent-gradient-subtle: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  --card-gradient: linear-gradient(145deg, #ffffff 0%, #fff7f9 100%);
+  --satin-gradient: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 50%, #ffd0de 100%);
 
-  --bg-body: #faf8fe;
+  --dark-900: #29101b;
+  --dark-800: #3b1728;
+  --dark-700: #551d38;
+  --text-main: #2f1d26;
+  --text-muted: #795d6a;
+  --text-light: #a88d9b;
+
+  --bg-body: #fff8fa;
   --bg-card: #ffffff;
-  --bg-card-glass: rgba(255, 255, 255, 0.82);
+  --bg-card-glass: rgba(255, 255, 255, 0.9);
 
-  --border-subtle: rgba(168, 85, 247, 0.14);
-  --border-pink: rgba(236, 72, 153, 0.16);
+  --border-subtle: rgba(238, 75, 134, 0.16);
+  --border-pink: rgba(244, 114, 161, 0.25);
+  --border-pearl: rgba(255, 255, 255, 0.85);
 
-  --shadow-sm: 0 2px 8px -2px rgba(124, 58, 237, 0.06);
-  --shadow-md: 0 10px 25px -4px rgba(124, 58, 237, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.02);
-  --shadow-lg: 0 20px 35px -8px rgba(124, 58, 237, 0.12), 0 8px 16px -4px rgba(0, 0, 0, 0.03);
-  --shadow-glow: 0 12px 30px -4px rgba(236, 72, 153, 0.28);
+  --shadow-sm: 0 2px 10px -2px rgba(238, 75, 134, 0.08);
+  --shadow-md: 0 10px 26px -4px rgba(238, 75, 134, 0.10), 0 4px 10px -2px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 20px 38px -8px rgba(238, 75, 134, 0.16), 0 8px 16px -4px rgba(0, 0, 0, 0.03);
+  --shadow-glow: 0 12px 32px -4px rgba(244, 114, 161, 0.35);
+  --shadow-pearl: 0 8px 24px rgba(255, 182, 193, 0.35);
 
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 34px;
   --radius-full: 9999px;
 
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,45 +95,46 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Ambient Background Blobs for Soft Aesthetic Glow */
+/* Ambient Background Blobs for Soft Coquette Aesthetic Glow */
 .ambient-glow {
   position: fixed;
   border-radius: 50%;
-  filter: blur(90px);
+  filter: blur(95px);
   z-index: -1;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.6;
 }
 
 .ambient-glow-1 {
   top: -120px;
   right: -80px;
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.25) 0%, rgba(168, 85, 247, 0.15) 100%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(244, 114, 161, 0.28) 0%, rgba(255, 208, 222, 0.2) 70%, transparent 100%);
 }
 
 .ambient-glow-2 {
-  top: 40%;
+  top: 38%;
   left: -150px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, rgba(243, 232, 255, 0.3) 100%);
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(238, 75, 134, 0.20) 0%, rgba(255, 228, 236, 0.35) 70%, transparent 100%);
 }
 
 .ambient-glow-3 {
   bottom: 5%;
   right: -100px;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, rgba(244, 114, 182, 0.2) 0%, rgba(192, 132, 252, 0.18) 100%);
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(251, 113, 133, 0.22) 0%, rgba(255, 215, 225, 0.22) 70%, transparent 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--dark-800);
   line-height: 1.25;
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 p {
@@ -169,7 +181,7 @@ button, input, textarea {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 16px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
   background: var(--primary-100);
   color: var(--primary-700);
@@ -178,7 +190,8 @@ button, input, textarea {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 14px;
-  border: 1px solid rgba(168, 85, 247, 0.22);
+  border: 1px solid rgba(238, 75, 134, 0.22);
+  box-shadow: 0 2px 8px rgba(238, 75, 134, 0.08);
 }
 
 .section-tag svg {
@@ -188,7 +201,7 @@ button, input, textarea {
 }
 
 .section-title {
-  font-size: 2.35rem;
+  font-size: 2.5rem;
   letter-spacing: -0.5px;
   margin-bottom: 16px;
   color: var(--dark-800);
@@ -206,6 +219,8 @@ button, input, textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  font-style: italic;
+  padding-right: 4px;
 }
 
 /* --- Header & Navigation Bar --- */
@@ -215,16 +230,16 @@ button, input, textarea {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(168, 85, 247, 0.12);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(238, 75, 134, 0.14);
   transition: var(--transition-normal);
 }
 
 .site-header.scrolled {
-  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.08);
-  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 6px 24px rgba(238, 75, 134, 0.08);
+  background: rgba(255, 255, 255, 0.97);
 }
 
 .nav-container {
@@ -238,9 +253,9 @@ button, input, textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 1.35rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.4rem;
   color: var(--dark-800);
 }
 
@@ -257,9 +272,19 @@ button, input, textarea {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 800;
-  box-shadow: 0 4px 14px rgba(168, 85, 247, 0.35);
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  box-shadow: 0 4px 14px rgba(238, 75, 134, 0.35);
+  position: relative;
+}
+
+.logo-badge::after {
+  content: '🎀';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 0.85rem;
 }
 
 .brand-name {
@@ -268,17 +293,19 @@ button, input, textarea {
 }
 
 .brand-name .title {
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: 1.28rem;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--dark-800);
 }
 
 .brand-name .badge-sub {
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-600);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 /* Nav Menu */
@@ -293,7 +320,7 @@ button, input, textarea {
   font-size: 0.92rem;
   font-weight: 600;
   color: var(--text-muted);
-  padding: 8px 14px;
+  padding: 8px 16px;
   border-radius: var(--radius-full);
   transition: var(--transition-fast);
   position: relative;
@@ -301,13 +328,14 @@ button, input, textarea {
 
 .nav-link:hover {
   color: var(--primary-600);
-  background: var(--primary-50);
+  background: var(--primary-100);
 }
 
 .nav-link.active {
   color: var(--primary-700);
   background: var(--primary-100);
   font-weight: 700;
+  box-shadow: 0 2px 8px rgba(238, 75, 134, 0.12);
 }
 
 /* Hamburger Toggle Button */
@@ -358,7 +386,7 @@ button, input, textarea {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: var(--radius-full);
   background: #ffffff;
   border: 1px solid var(--border-subtle);
@@ -373,7 +401,7 @@ button, input, textarea {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #10b981;
+  background: #ec4899;
   position: relative;
 }
 
@@ -385,7 +413,7 @@ button, input, textarea {
   right: -3px;
   bottom: -3px;
   border-radius: 50%;
-  background: rgba(16, 185, 129, 0.45);
+  background: rgba(236, 72, 153, 0.45);
   animation: pulseAnimation 2s infinite;
 }
 
@@ -396,9 +424,10 @@ button, input, textarea {
 }
 
 .hero-greeting {
-  font-size: 3.4rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
   margin-bottom: 12px;
   line-height: 1.15;
   color: var(--dark-800);
@@ -413,11 +442,12 @@ button, input, textarea {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .hero-subtitle-separator {
   color: var(--pink-400);
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .hero-description {
@@ -454,11 +484,11 @@ button, input, textarea {
 .btn-primary {
   background: var(--accent-gradient);
   color: #ffffff;
-  box-shadow: 0 10px 24px -3px rgba(168, 85, 247, 0.38);
+  box-shadow: 0 10px 24px -3px rgba(238, 75, 134, 0.42);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 14px 28px -2px rgba(236, 72, 153, 0.45);
+  box-shadow: 0 14px 30px -2px rgba(244, 114, 161, 0.55);
   transform: translateY(-2px);
   color: #ffffff;
 }
@@ -472,7 +502,7 @@ button, input, textarea {
 
 .btn-secondary:hover {
   background: var(--primary-50);
-  border-color: var(--primary-400);
+  border-color: var(--primary-300);
   color: var(--primary-700);
   transform: translateY(-2px);
 }
@@ -488,7 +518,7 @@ button, input, textarea {
   transform: translateX(3px);
 }
 
-/* Hero Media / Avatar Frame */
+/* Hero Media / Coquette Avatar Frame */
 .hero-media {
   position: relative;
   display: flex;
@@ -498,8 +528,8 @@ button, input, textarea {
 
 .hero-avatar-wrapper {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 370px;
+  height: 370px;
   max-width: 100%;
 }
 
@@ -507,43 +537,56 @@ button, input, textarea {
   width: 100%;
   height: 100%;
   border-radius: 40px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(243, 232, 255, 0.7));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 228, 236, 0.88));
   backdrop-filter: blur(16px);
-  padding: 16px;
-  box-shadow: var(--shadow-lg);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  padding: 14px;
+  box-shadow: 0 20px 45px -10px rgba(238, 75, 134, 0.28), 0 0 32px rgba(255, 182, 193, 0.42);
+  border: 3px solid rgba(255, 255, 255, 0.95);
   position: relative;
   z-index: 2;
   transition: var(--transition-normal);
   overflow: hidden;
 }
 
+.hero-avatar-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  border: 1px solid rgba(244, 114, 161, 0.25);
+  pointer-events: none;
+}
+
 .hero-avatar-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-glow);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 24px 52px -8px rgba(238, 75, 134, 0.38), 0 0 40px rgba(255, 182, 193, 0.6);
 }
 
 .hero-avatar-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  object-position: center top;
+  border-radius: 28px;
 }
 
-/* Floating Badges around Avatar */
+/* Floating Badges around Avatar with Coquette Styling */
 .floating-badge {
   position: absolute;
   z-index: 3;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
   padding: 10px 18px;
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  box-shadow: 0 8px 24px rgba(238, 75, 134, 0.18);
+  border: 1.5px solid rgba(244, 114, 161, 0.3);
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--dark-800);
   animation: floatSlow 4s ease-in-out infinite alternate;
@@ -560,7 +603,7 @@ button, input, textarea {
 }
 
 .floating-badge-icon.music {
-  background: var(--pink-400);
+  background: var(--accent-gradient);
 }
 
 .floating-badge-icon.code {
@@ -595,11 +638,12 @@ button, input, textarea {
   background: var(--bg-card);
   padding: 40px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .narrative-quote {
@@ -609,12 +653,12 @@ button, input, textarea {
 
 .quote-mark {
   position: absolute;
-  top: -24px;
+  top: -28px;
   left: -12px;
-  font-size: 5rem;
-  font-family: 'Outfit', sans-serif;
+  font-size: 5.5rem;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--primary-200);
-  opacity: 0.5;
+  opacity: 0.6;
   line-height: 1;
   pointer-events: none;
 }
@@ -634,7 +678,7 @@ button, input, textarea {
   gap: 16px;
   margin-top: 16px;
   padding-top: 24px;
-  border-top: 1px dashed rgba(168, 85, 247, 0.2);
+  border-top: 1px dashed rgba(238, 75, 134, 0.25);
 }
 
 .highlight-item {
@@ -644,7 +688,7 @@ button, input, textarea {
   padding: 12px 16px;
   background: var(--primary-50);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(238, 75, 134, 0.15);
 }
 
 .highlight-icon {
@@ -680,10 +724,10 @@ button, input, textarea {
 
 /* Identity Card Grid */
 .about-identity-card {
-  background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fff7f9 100%);
   padding: 36px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
@@ -695,7 +739,7 @@ button, input, textarea {
   gap: 14px;
   margin-bottom: 28px;
   padding-bottom: 18px;
-  border-bottom: 1.5px solid rgba(168, 85, 247, 0.15);
+  border-bottom: 1.5px solid rgba(238, 75, 134, 0.18);
 }
 
 .identity-icon-circle {
@@ -716,7 +760,7 @@ button, input, textarea {
 }
 
 .identity-header h3 {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   color: var(--dark-800);
 }
 
@@ -733,14 +777,14 @@ button, input, textarea {
   padding: 10px 14px;
   background: #ffffff;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(238, 75, 134, 0.1);
   font-size: 0.94rem;
   transition: var(--transition-fast);
 }
 
 .identity-row:hover {
   background: var(--primary-50);
-  border-color: rgba(168, 85, 247, 0.2);
+  border-color: rgba(238, 75, 134, 0.25);
   transform: translateX(4px);
 }
 
@@ -759,12 +803,13 @@ button, input, textarea {
 
 .badge-tag {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 2px 12px;
   background: var(--primary-100);
   color: var(--primary-700);
   border-radius: var(--radius-full);
   font-size: 0.82rem;
   font-weight: 700;
+  border: 1px solid rgba(238, 75, 134, 0.18);
 }
 
 /* --- Section: Pendidikan --- */
@@ -787,7 +832,7 @@ button, input, textarea {
 .education-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary-400);
+  border-color: var(--primary-300);
 }
 
 .education-card-decoration {
@@ -823,8 +868,9 @@ button, input, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(238, 75, 134, 0.22);
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(238, 75, 134, 0.12);
 }
 
 .education-logo-badge svg {
@@ -835,7 +881,7 @@ button, input, textarea {
 
 .education-school {
   font-size: 1.45rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--dark-800);
   margin-bottom: 4px;
 }
@@ -844,6 +890,7 @@ button, input, textarea {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--primary-600);
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .education-period-badge {
@@ -856,7 +903,8 @@ button, input, textarea {
   color: var(--pink-500);
   font-weight: 700;
   font-size: 0.88rem;
-  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 2px 8px rgba(238, 75, 134, 0.15);
+  border: 1px solid rgba(238, 75, 134, 0.2);
 }
 
 .education-period-badge svg {
@@ -875,7 +923,7 @@ button, input, textarea {
 .edu-pill {
   padding: 6px 14px;
   background: var(--primary-50);
-  border: 1px solid rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(238, 75, 134, 0.18);
   border-radius: var(--radius-full);
   font-size: 0.86rem;
   font-weight: 600;
@@ -889,7 +937,7 @@ button, input, textarea {
   font-size: 1.05rem;
   line-height: 1.85;
   color: var(--text-main);
-  background: #faf8fe;
+  background: #fff9fb;
   padding: 24px;
   border-radius: var(--radius-md);
   border-left: 3px solid var(--primary-400);
@@ -928,7 +976,7 @@ button, input, textarea {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.35);
+  box-shadow: 0 10px 20px rgba(238, 75, 134, 0.35);
   flex-shrink: 0;
 }
 
@@ -939,20 +987,21 @@ button, input, textarea {
 }
 
 .skill-spotlight-meta h3 {
-  font-size: 1.65rem;
+  font-size: 1.7rem;
   color: var(--dark-800);
   margin-bottom: 4px;
 }
 
 .skill-badge-highlight {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 4px 14px;
   background: var(--pink-100);
   color: var(--pink-500);
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  border: 1px solid rgba(238, 75, 134, 0.2);
 }
 
 .skill-spotlight-desc {
@@ -960,13 +1009,13 @@ button, input, textarea {
   line-height: 1.8;
   color: var(--text-main);
   margin-bottom: 32px;
-  background: #fdfbf7;
+  background: #fff9fb;
   padding: 20px 24px;
   border-radius: var(--radius-md);
   border-left: 4px solid var(--pink-400);
 }
 
-/* 4 Pillars of Collaboration (No fake percentages, rich descriptive metrics) */
+/* 4 Pillars of Collaboration */
 .teamwork-pillars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -975,7 +1024,7 @@ button, input, textarea {
 
 .pillar-item {
   background: var(--primary-50);
-  border: 1px solid rgba(168, 85, 247, 0.16);
+  border: 1px solid rgba(238, 75, 134, 0.16);
   border-radius: var(--radius-md);
   padding: 20px 16px;
   text-align: center;
@@ -986,7 +1035,7 @@ button, input, textarea {
   background: #ffffff;
   box-shadow: var(--shadow-sm);
   transform: translateY(-3px);
-  border-color: var(--primary-400);
+  border-color: var(--primary-300);
 }
 
 .pillar-icon {
@@ -1006,10 +1055,11 @@ button, input, textarea {
 }
 
 .pillar-title {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--dark-800);
   margin-bottom: 4px;
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
 .pillar-desc {
@@ -1027,7 +1077,7 @@ button, input, textarea {
 
 .tech-focus-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 24px;
   display: flex;
@@ -1046,13 +1096,14 @@ button, input, textarea {
 .tech-icon-box {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--primary-100);
   color: var(--primary-700);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: 1px solid rgba(238, 75, 134, 0.15);
 }
 
 .tech-icon-box svg {
@@ -1062,7 +1113,7 @@ button, input, textarea {
 }
 
 .tech-details h4 {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: var(--dark-800);
   margin-bottom: 6px;
 }
@@ -1083,7 +1134,7 @@ button, input, textarea {
 .personality-card {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   padding: 32px 24px;
   text-align: center;
   box-shadow: var(--shadow-md);
@@ -1110,7 +1161,7 @@ button, input, textarea {
 .personality-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(168, 85, 247, 0.35);
+  border-color: rgba(238, 75, 134, 0.35);
 }
 
 .personality-card:hover::before {
@@ -1128,14 +1179,15 @@ button, input, textarea {
   justify-content: center;
   margin-bottom: 22px;
   transition: var(--transition-normal);
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.12);
+  box-shadow: 0 4px 12px rgba(238, 75, 134, 0.15);
+  border: 1px solid rgba(238, 75, 134, 0.2);
 }
 
 .personality-card:hover .personality-icon-wrapper {
   background: var(--accent-gradient);
   color: #ffffff;
   transform: scale(1.08) rotate(4deg);
-  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 8px 20px rgba(244, 114, 161, 0.35);
 }
 
 .personality-icon-wrapper svg {
@@ -1145,7 +1197,7 @@ button, input, textarea {
 }
 
 .personality-name {
-  font-size: 1.22rem;
+  font-size: 1.25rem;
   color: var(--dark-800);
   margin-bottom: 12px;
 }
@@ -1156,23 +1208,24 @@ button, input, textarea {
   line-height: 1.6;
 }
 
-/* --- Section: Minat & Seni/Musik --- */
+/* --- Section: Minat & Seni/Musik (Pink Coquette Romantic Velvet Theme) --- */
 .music-interest-wrapper {
-  background: linear-gradient(135deg, #201235 0%, #170d2b 100%);
+  background: linear-gradient(135deg, #381223 0%, #200813 100%);
   border-radius: var(--radius-xl);
   padding: 56px;
   color: #ffffff;
-  box-shadow: 0 25px 50px -12px rgba(28, 10, 50, 0.45);
+  box-shadow: 0 25px 50px -12px rgba(45, 13, 27, 0.55);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(244, 114, 161, 0.25);
 }
 
 /* Ambient glow inside music card */
 .music-glow-orb {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, rgba(168, 85, 247, 0) 70%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(244, 114, 161, 0.35) 0%, rgba(238, 75, 134, 0) 70%);
   top: -80px;
   right: -60px;
   pointer-events: none;
@@ -1188,7 +1241,7 @@ button, input, textarea {
 }
 
 .music-content h3 {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   color: #ffffff;
   margin-bottom: 16px;
 }
@@ -1196,7 +1249,7 @@ button, input, textarea {
 .music-lead {
   font-size: 1.08rem;
   line-height: 1.8;
-  color: #e2e8f0;
+  color: #fce7ef;
   margin-bottom: 28px;
 }
 
@@ -1215,22 +1268,22 @@ button, input, textarea {
   border-radius: var(--radius-full);
   font-size: 0.92rem;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   backdrop-filter: blur(8px);
 }
 
 .music-pill.pink {
-  background: rgba(236, 72, 153, 0.22);
-  border-color: rgba(236, 72, 153, 0.4);
-  color: #fbcfe8;
+  background: rgba(238, 75, 134, 0.28);
+  border-color: rgba(244, 114, 161, 0.5);
+  color: #ffe4ec;
 }
 
 .music-pill.purple {
-  background: rgba(168, 85, 247, 0.25);
-  border-color: rgba(168, 85, 247, 0.45);
-  color: #e9d5ff;
+  background: rgba(219, 39, 119, 0.28);
+  border-color: rgba(244, 114, 161, 0.5);
+  color: #fbcfe8;
 }
 
 .music-pill svg {
@@ -1241,26 +1294,28 @@ button, input, textarea {
 
 /* Vinyl Player Aesthetic Component */
 .music-player-mockup {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-lg);
   padding: 32px;
   backdrop-filter: blur(16px);
   text-align: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
 }
 
 .vinyl-disc {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: radial-gradient(circle, #111 25%, #2a2a2a 26%, #1a1a1a 50%, #2a2a2a 75%, #050505 100%);
+  background: radial-gradient(circle, #180912 25%, #2f1220 26%, #1e0915 50%, #2f1220 75%, #0e0409 100%);
   margin: 0 auto 24px auto;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   animation: rotateVinyl 12s linear infinite;
+  border: 2px solid rgba(244, 114, 161, 0.3);
 }
 
 @keyframes rotateVinyl {
@@ -1277,7 +1332,8 @@ button, input, textarea {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  border: 4px solid #111;
+  border: 4px solid #180912;
+  box-shadow: 0 0 15px rgba(244, 114, 161, 0.5);
 }
 
 .vinyl-center svg {
@@ -1287,18 +1343,19 @@ button, input, textarea {
 }
 
 .player-info h4 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 4px;
 }
 
 .player-info p {
-  color: #cbd5e1;
+  color: #fbcfe8;
   font-size: 0.88rem;
   margin-bottom: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Audio Visualizer Wave Animation */
+/* Audio Visualizer Wave Animation in Coquette Tones */
 .audio-visualizer {
   display: flex;
   align-items: flex-end;
@@ -1316,12 +1373,12 @@ button, input, textarea {
 }
 
 .wave-bar:nth-child(1) { height: 12px; animation-delay: -0.2s; }
-.wave-bar:nth-child(2) { height: 26px; animation-delay: -0.6s; background: #c084fc; }
+.wave-bar:nth-child(2) { height: 26px; animation-delay: -0.6s; background: #fda4af; }
 .wave-bar:nth-child(3) { height: 18px; animation-delay: -0.4s; }
-.wave-bar:nth-child(4) { height: 30px; animation-delay: -0.8s; background: #f472b6; }
-.wave-bar:nth-child(5) { height: 16px; animation-delay: -0.3s; background: #a855f7; }
+.wave-bar:nth-child(4) { height: 30px; animation-delay: -0.8s; background: #f472a1; }
+.wave-bar:nth-child(5) { height: 16px; animation-delay: -0.3s; background: #f43f5e; }
 .wave-bar:nth-child(6) { height: 28px; animation-delay: -0.7s; }
-.wave-bar:nth-child(7) { height: 14px; animation-delay: -0.5s; background: #c084fc; }
+.wave-bar:nth-child(7) { height: 14px; animation-delay: -0.5s; background: #fda4af; }
 
 @keyframes equalize {
   0% { transform: scaleY(0.3); }
@@ -1375,6 +1432,7 @@ button, input, textarea {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: 1px solid rgba(238, 75, 134, 0.2);
 }
 
 .exp-badge-icon svg {
@@ -1384,7 +1442,7 @@ button, input, textarea {
 }
 
 .exp-title {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   color: var(--dark-800);
   margin-bottom: 4px;
 }
@@ -1396,6 +1454,7 @@ button, input, textarea {
   font-size: 0.88rem;
   color: var(--text-muted);
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .exp-badge-year {
@@ -1405,10 +1464,11 @@ button, input, textarea {
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.88rem;
+  border: 1px solid rgba(238, 75, 134, 0.2);
 }
 
 .exp-body {
-  background: #faf8fe;
+  background: #fff9fb;
   padding: 22px 24px;
   border-radius: var(--radius-md);
   border-left: 3px solid var(--pink-400);
@@ -1426,11 +1486,11 @@ button, input, textarea {
 
 .exp-tag {
   font-size: 0.82rem;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: var(--radius-full);
   background: var(--primary-50);
   color: var(--primary-700);
-  border: 1px solid rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(238, 75, 134, 0.18);
   font-weight: 600;
 }
 
@@ -1444,7 +1504,7 @@ button, input, textarea {
 
 .contact-info-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 36px;
   box-shadow: var(--shadow-md);
@@ -1454,7 +1514,7 @@ button, input, textarea {
 }
 
 .contact-info-card h3 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   color: var(--dark-800);
   margin-bottom: 12px;
 }
@@ -1478,7 +1538,7 @@ button, input, textarea {
   padding: 14px 16px;
   border-radius: var(--radius-md);
   background: var(--primary-50);
-  border: 1px solid rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(238, 75, 134, 0.15);
 }
 
 .contact-item-icon {
@@ -1491,6 +1551,7 @@ button, input, textarea {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(238, 75, 134, 0.25);
 }
 
 .contact-item-icon svg {
@@ -1515,7 +1576,7 @@ button, input, textarea {
 /* Contact Interactive Form */
 .contact-form-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 36px;
   box-shadow: var(--shadow-md);
@@ -1537,7 +1598,7 @@ button, input, textarea {
   width: 100%;
   padding: 13px 18px;
   border-radius: var(--radius-md);
-  border: 1.5px solid rgba(168, 85, 247, 0.2);
+  border: 1.5px solid rgba(238, 75, 134, 0.2);
   background: #ffffff;
   font-size: 0.96rem;
   color: var(--text-main);
@@ -1547,7 +1608,7 @@ button, input, textarea {
 .form-control:focus {
   outline: none;
   border-color: var(--primary-500);
-  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 0 0 4px rgba(244, 114, 161, 0.2);
 }
 
 textarea.form-control {
@@ -1565,7 +1626,8 @@ textarea.form-control {
   border-radius: var(--radius-md);
   padding: 16px 22px;
   box-shadow: var(--shadow-lg);
-  border-left: 4px solid #10b981;
+  border-left: 4px solid var(--primary-500);
+  border: 1px solid rgba(238, 75, 134, 0.2);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1584,7 +1646,7 @@ textarea.form-control {
 .toast-icon {
   width: 24px;
   height: 24px;
-  color: #10b981;
+  color: var(--primary-500);
   flex-shrink: 0;
 }
 
@@ -1597,7 +1659,7 @@ textarea.form-control {
 /* --- Footer --- */
 .site-footer {
   background: #ffffff;
-  border-top: 1px solid rgba(168, 85, 247, 0.15);
+  border-top: 1.5px solid rgba(238, 75, 134, 0.16);
   padding: 40px 0;
 }
 
@@ -1624,6 +1686,7 @@ textarea.form-control {
 .footer-sub {
   font-size: 0.82rem;
   color: var(--primary-600);
+  font-weight: 600;
 }
 
 /* Back to Top Button */
@@ -1631,22 +1694,22 @@ textarea.form-control {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   background: var(--primary-100);
   color: var(--primary-700);
   border-radius: var(--radius-full);
   font-size: 0.88rem;
   font-weight: 700;
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(238, 75, 134, 0.22);
   cursor: pointer;
   transition: var(--transition-fast);
 }
 
 .back-to-top-btn:hover {
-  background: var(--primary-600);
+  background: var(--accent-gradient);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.25);
+  box-shadow: 0 4px 14px rgba(238, 75, 134, 0.3);
 }
 
 .back-to-top-btn svg {
@@ -1660,15 +1723,15 @@ textarea.form-control {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: var(--accent-gradient);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 6px 20px rgba(238, 75, 134, 0.35);
   border: none;
   cursor: pointer;
   z-index: 999;
@@ -1759,11 +1822,11 @@ textarea.form-control {
   }
 
   .section-title {
-    font-size: 1.85rem;
+    font-size: 2rem;
   }
 
   .hero-greeting {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   .hero-subtitle {
@@ -1772,8 +1835,8 @@ textarea.form-control {
   }
 
   .hero-avatar-wrapper {
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
   }
 
   .badge-top {
@@ -1803,11 +1866,11 @@ textarea.form-control {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+    border-bottom: 1.5px solid rgba(238, 75, 134, 0.18);
     flex-direction: column;
     padding: 20px 24px;
     gap: 6px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 30px rgba(238, 75, 134, 0.12);
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -1867,7 +1930,7 @@ textarea.form-control {
 /* Small Screens (<= 480px) */
 @media (max-width: 480px) {
   .hero-greeting {
-    font-size: 2.1rem;
+    font-size: 2.15rem;
   }
 
   .personality-grid {

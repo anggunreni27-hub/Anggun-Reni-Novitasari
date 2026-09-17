@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show toast notification
       if (toastNotice && toastMessage) {
-        toastMessage.textContent = `Terima kasih, ${senderName}! Pesan Anda telah tersimpan dan siap disampaikan kepada Anggun.`;
+        toastMessage.textContent = `Terima kasih, ${senderName}! 🎀 Pesan Anda telah tersimpan dan siap disampaikan kepada Anggun.`;
         toastNotice.classList.add('show');
 
         // Reset form fields
